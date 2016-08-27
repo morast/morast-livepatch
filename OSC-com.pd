@@ -1,0 +1,11 @@
+#N canvas 1074 453 450 300 10;
+#X obj 48 171 netreceive -u -b 12345;
+#X obj 221 173 netsend -u;
+#X msg 221 139 connect localhost 54321;
+#X obj 51 228 print;
+#X msg 66 118 listen 12345;
+#X msg 178 108 listen 0;
+#X connect 0 0 3 0;
+#X connect 2 0 1 0;
+#X connect 4 0 0 0;
+#X connect 5 0 0 0;
